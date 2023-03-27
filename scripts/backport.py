@@ -401,7 +401,7 @@ for index, pr_info in enumerate(prs_to_backport.values()):
 
     # Push the backport branch.
     git_check(
-        f"push {target_remote} @:refs/heads/{backport_branch} > /dev/null 2>&1"
+        f"push {target_remote} @:refs/heads/{backport_branch}"
     )
 
     # Prepare description for the backport PR.
